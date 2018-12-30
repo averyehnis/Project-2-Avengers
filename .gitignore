@@ -1,0 +1,9 @@
+*~
+*.java
+jobP2.properties
+MySQL_Create_Database
+*.sql
+*.log
+scripts/
+*.sh
+sqoopPW.txt
