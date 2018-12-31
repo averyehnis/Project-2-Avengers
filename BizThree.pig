@@ -6,4 +6,4 @@ data_biz_three = foreach data generate COUNTRY_NAME, INDICATOR_NAME, com.revatur
 
 data_biz_final = RANK data_biz_three;
 
-STORE data_biz_final INTO 'hbase://BizThree' USING org.apache.pig.backend.hadoop.hbase.HBaseStorage('result:country, result:indicator, result:value');
+STORE data_biz_final INTO 'hbase://BizThree' USING org.apache.pig.backend.hadoop.hbase.HBaseStorage('RESULT:COUNTRY, RESULT:INDICATOR, RESULT:VALUE');
